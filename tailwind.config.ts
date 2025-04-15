@@ -116,17 +116,25 @@ export default {
 				'slide-up': 'slide-up 0.6s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'rotate-slow': 'rotate-slow 20s linear infinite'
-			}
+			},
+            boxShadow: {
+                'glow-sm': '0 0 10px rgba(155, 135, 245, 0.5)',
+                'glow-md': '0 0 20px rgba(155, 135, 245, 0.5)',
+                'glow-lg': '0 0 30px rgba(155, 135, 245, 0.5)',
+                'glow-pink-sm': '0 0 10px rgba(217, 70, 239, 0.5)',
+                'glow-pink-md': '0 0 20px rgba(217, 70, 239, 0.5)',
+                'glow-blue-sm': '0 0 10px rgba(51, 195, 240, 0.5)',
+                'glow-blue-md': '0 0 20px rgba(51, 195, 240, 0.5)',
+				'sm': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+				'DEFAULT': '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+				'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+				'lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+				'xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+				'2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+				'inner': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+				'none': 'none',
+            }
 		},
-        boxShadow: {
-            'glow-sm': '0 0 10px rgba(155, 135, 245, 0.5)',
-            'glow-md': '0 0 20px rgba(155, 135, 245, 0.5)',
-            'glow-lg': '0 0 30px rgba(155, 135, 245, 0.5)',
-            'glow-pink-sm': '0 0 10px rgba(217, 70, 239, 0.5)',
-            'glow-pink-md': '0 0 20px rgba(217, 70, 239, 0.5)',
-            'glow-blue-sm': '0 0 10px rgba(51, 195, 240, 0.5)',
-            'glow-blue-md': '0 0 20px rgba(51, 195, 240, 0.5)',
-        }
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
