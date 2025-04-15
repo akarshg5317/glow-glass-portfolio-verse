@@ -1,12 +1,61 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from "react";
+import Navigation from "@/components/Navigation";
+import ThemeToggle from "@/components/ThemeToggle";
+import BackgroundEffect from "@/components/BackgroundEffect";
+import HeroSection from "@/components/sections/HeroSection";
+import ProjectsSection from "@/components/sections/ProjectsSection";
+import TechStackSection from "@/components/sections/TechStackSection";
+import AboutSection from "@/components/sections/AboutSection";
+import EducationSection from "@/components/sections/EducationSection";
+import ExperienceSection from "@/components/sections/ExperienceSection";
+import ContactSection from "@/components/sections/ContactSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  // Set the dark mode as default
+  useEffect(() => {
+    if (!localStorage.getItem('theme')) {
+      document.documentElement.classList.add('dark');
+    }
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="antialiased selection:bg-primary selection:bg-opacity-30 selection:text-primary-foreground">
+      {/* Background Effects */}
+      <BackgroundEffect />
+      
+      {/* Theme Toggle Button */}
+      <ThemeToggle />
+      
+      {/* Navigation */}
+      <Navigation />
+      
+      <main>
+        {/* Hero Section */}
+        <HeroSection />
+        
+        {/* Projects Section */}
+        <ProjectsSection />
+        
+        {/* Tech Stack Section */}
+        <TechStackSection />
+        
+        {/* About Section */}
+        <AboutSection />
+        
+        {/* Education Section */}
+        <EducationSection />
+        
+        {/* Experience Section */}
+        <ExperienceSection />
+        
+        {/* Contact Section */}
+        <ContactSection />
+      </main>
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
