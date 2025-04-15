@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 
@@ -49,12 +48,17 @@ const projects: Project[] = [
 const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
   return (
     <motion.div
-      className="glass-card h-full overflow-hidden group transition-all duration-300 hover:shadow-glow-lg dark:hover:shadow-glow-pink-md"
+      className="glass-card h-full overflow-hidden group transition-all duration-300 
+                 hover:shadow-glow-md dark:hover:shadow-glow-pink-md 
+                 hover:scale-[1.02] dark:hover:scale-[1.03]"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true, margin: "-100px" }}
-      whileHover={{ y: -5, transition: { duration: 0.2 } }}
+      whileHover={{ 
+        scale: 1.03, 
+        transition: { duration: 0.2 } 
+      }}
     >
       <div className="overflow-hidden h-48 relative">
         <img
