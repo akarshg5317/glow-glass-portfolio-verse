@@ -49,7 +49,7 @@ const projects: Project[] = [
 const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
   return (
     <motion.div
-      className="glass-card h-full overflow-hidden group"
+      className="glass-card h-full overflow-hidden group transition-all duration-300 hover:shadow-glow-lg dark:hover:shadow-glow-pink-md"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
