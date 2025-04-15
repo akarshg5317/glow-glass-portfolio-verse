@@ -4,26 +4,26 @@
 
 @layer base {
   :root {
-    /* Light Theme Colors - Soft Pastel Palette */
-    --background: 220 45% 96%; /* Soft pale blue */
-    --foreground: 240 10% 15%; /* Dark charcoal */
-    --card: 0 0% 100%; /* Pure white */
-    --card-foreground: 240 10% 3.9%;
-    --popover: 250 50% 98%; /* Very soft lavender */
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 250 70% 65%; /* Soft indigo */
+    /* Light Theme Colors - Orange Palette */
+    --background: 20 83% 98%; /* Soft light orange background */
+    --foreground: 22 84% 4.9%; /* Dark orange-brown text */
+    --card: 20 83% 99%; /* Very light orange card */
+    --card-foreground: 22 84% 4.9%;
+    --popover: 20 80% 97%; /* Soft popover background */
+    --popover-foreground: 22 84% 4.9%;
+    --primary: 22 82% 55%; /* Vibrant orange */
     --primary-foreground: 0 0% 98%;
-    --secondary: 260 30% 90%; /* Soft lilac */
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 250 30% 95%; /* Very soft purple */
-    --muted-foreground: 240 5% 45%;
-    --accent: 280 50% 85%; /* Soft mauve */
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 350 70% 60%; /* Soft coral red */
+    --secondary: 22 70% 85%; /* Soft light orange */
+    --secondary-foreground: 22 84% 4.9%;
+    --muted: 22 70% 90%; /* Very soft light orange */
+    --muted-foreground: 22 5% 45%;
+    --accent: 22 80% 90%; /* Soft accent orange */
+    --accent-foreground: 22 84% 4.9%;
+    --destructive: 0 84.2% 60.2%; /* Keeping default red for destructive */
     --destructive-foreground: 0 0% 98%;
-    --border: 250 20% 85%;
-    --input: 250 20% 85%;
-    --ring: 250 70% 65%;
+    --border: 22 70% 85%;
+    --input: 22 70% 85%;
+    --ring: 22 82% 55%;
     --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
@@ -37,26 +37,26 @@
   }
 
   .dark {
-    /* Dark Theme Colors - Deep Jewel Tones */
-    --background: 240 15% 10%; /* Deep midnight blue */
+    /* Dark Theme Colors - Deep Orange Palette */
+    --background: 15 70% 7%; /* Deep dark orange-brown background */
     --foreground: 0 0% 98%;
-    --card: 240 15% 7%; /* Almost black with deep blue undertone */
+    --card: 15 70% 5%; /* Almost black with deep orange undertone */
     --card-foreground: 0 0% 98%;
-    --popover: 250 20% 12%; /* Deep rich purple */
+    --popover: 15 70% 10%; /* Deep rich orange-brown */
     --popover-foreground: 0 0% 98%;
-    --primary: 262 83% 58%; /* Vibrant purple */
+    --primary: 22 80% 50%; /* Deep vibrant orange */
     --primary-foreground: 0 0% 98%;
-    --secondary: 250 20% 15%; /* Deep navy */
+    --secondary: 15 70% 15%; /* Deep orange-brown */
     --secondary-foreground: 0 0% 98%;
-    --muted: 250 20% 15%; /* Deep slate */
-    --muted-foreground: 250 15% 65%;
-    --accent: 280 30% 20%; /* Deep aubergine */
+    --muted: 15 70% 15%; /* Deep slate orange */
+    --muted-foreground: 15 50% 65%;
+    --accent: 15 70% 20%; /* Deep burnt orange */
     --accent-foreground: 0 0% 98%;
     --destructive: 10 70% 40%; /* Deep burnt red */
     --destructive-foreground: 0 0% 98%;
-    --border: 250 20% 15%;
-    --input: 250 20% 15%;
-    --ring: 262 83% 58%;
+    --border: 15 70% 15%;
+    --input: 15 70% 15%;
+    --ring: 22 80% 50%;
   }
 }
 
