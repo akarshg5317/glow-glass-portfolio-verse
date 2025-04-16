@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-background" />
         <BackgroundPaths />
         <div className="absolute top-1/4 -left-1/4 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl opacity-50 animate-rotate-slow" />
-        <div className="absolute bottom-1/4 -right-1/4 w-96 h-96 bg-glow-pink/20 rounded-full filter blur-3xl opacity-50 animate-rotate-slow" />
+        <div className="absolute bottom-1/4 -right-1/4 w-96 h-96 bg-secondary/20 rounded-full filter blur-3xl opacity-50 animate-rotate-slow" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,7 +31,7 @@ const HeroSection = () => {
           </motion.p>
           
           <motion.h1 
-            className="text-4xl md:text-7xl font-bold font-display text-glow tracking-tight"
+            className="text-4xl md:text-7xl font-bold font-display tracking-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
@@ -59,7 +59,7 @@ const HeroSection = () => {
           >
             <motion.a
               href="#projects"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium shadow-glow-sm hover:shadow-glow-md transition-all duration-300"
+              className="button-gradient inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium shadow-glow-sm hover:shadow-glow-md transition-all duration-300 text-white"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
